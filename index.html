@@ -2,10 +2,15 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bé ty ❤️cẩm tiên</title>
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet"/>
+    <link
+      rel="preload"
+      href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <link rel="stylesheet" href="/static/css/app.css" />
   </head>
   <body class="font-sans antialiased">
@@ -61,14 +66,14 @@
           },
           "message": "",
           "client": {
-            "fontName": "Mali",
+            "fontName": "Instrument Sans",
             "color": "#ff0019",
             "messages": [
-              "bé ty ❤️cẩm tiên ",
-              "bé ty ❤️cẩm tiên ",
-              "bé ty ❤️cẩm tiên "
+              "bé ty ❤️cẩm tiên",
+              "bé ty ❤️cẩm tiên",
+              "bé ty ❤️cẩm tiên"
             ],
-            "music":"/static/music/Phép Màu (Đàn Cá Gỗ OST) - Mounter x MAYDAYs, Minh Tốc  Official MV - Mounter.mp3"
+            "music": "https://drive.google.com/uc?export=download&id=15Q-nQFPskBx3l3cnsHzeDcZdaL2qfNkg"
           },
           "clientId": "/"
         },
@@ -76,11 +81,14 @@
         "version": "",
         "clearHistory": false,
         "encryptHistory": false
-      }
-      '
+      }'
     >
-  </div>
-  <script type="module" src="/static/js/app.js"></script>
-  <script type="module" src="/static/js/home.js"></script>
+      <audio controls>
+        <source src="https://drive.google.com/uc?export=download&id=15Q-nQFPskBx3l3cnsHzeDcZdaL2qfNkg" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ thẻ âm thanh.
+      </audio>
+    </div>
+    <script type="module" src="/static/js/app.js" defer></script>
+    <script type="module" src="/static/js/home.js" defer></script>
   </body>
 </html>
